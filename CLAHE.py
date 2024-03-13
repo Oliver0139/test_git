@@ -1,20 +1,3 @@
-# -*- coding: UTF-8 -*-
-"""
-"Contrast Limited Adaptive Histogram Equalization(CLAHE) implementation"
-by Omer Ferhat Sarioglu, omerf.sarioglu@gmail.com
-
-The below implementation does not assume that the
-X and Y image resolutions are an integer multiple
-of the X and Y sizes of the contextual regions.
-
-Instead it pads the image with the number of excess pixels
-required to make the X and Y resolutions an integral multiple
-of X and Y sizes of the contextual region(if required)
-
-Minimum and Maximum values are assumed to be 0 and 255
-respectively even if they are not present in the image
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage import io
